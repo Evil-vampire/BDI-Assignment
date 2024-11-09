@@ -6,9 +6,9 @@ I have created Docker images for a simple 3-tier web application using Dockerfil
 
 # 3-Tier Web Application Docker Images
 
-Nginx Web Server - evilvampire/bdiui:v1,
-Flask Application Server - evilvampire/bdiapi:v1,
-PostgreSQL Database - evilvampire/bdidb:v1,
+Nginx Web Server - `evilvampire/bdiui:v1`,
+Flask Application Server - `evilvampire/bdiapi:v1`,
+PostgreSQL Database - `evilvampire/bdidb:v1`,
 
 # kubernetes folder contains the Kubernetes deployment configuration for a 3-tier web application.
 
