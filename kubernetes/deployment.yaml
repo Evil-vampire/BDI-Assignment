@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bdi-3-tier-web-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: bdi-3-tier-web-app
+  template:
+    metadata:
+      labels:
+        app: bdi-3-tier-web-app
+    spec:
+      containers:
+      - name: ui
+        image: evilvampire/bdiui:v1
+        ports:
+        - containerPort: 80
+      - name: api
+        image: evilvampire/bdiapi:v1
+        ports:
+        - containerPort: 5000
+      - name: db
+        image: evilvampire/bdidb:v1
+        env:
+        - name: POSTGRES_USER
+          value: myuser
+        - name: POSTGRES_PASSWORD
+          value: mypassword

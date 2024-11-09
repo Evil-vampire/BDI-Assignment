@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bdi-3-tier-web-app
+spec:
+  selector:
+    app: bdi-3-tier-web-app
+  ports:
+  - name: http
+    port: 80
+    targetPort: 80
+  type: LoadBalancer
