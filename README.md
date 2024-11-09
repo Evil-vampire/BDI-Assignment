@@ -4,17 +4,17 @@
 
 I have created Docker images for a simple 3-tier web application using Dockerfiles for each component and pushed these images to Docker Hub for easy access and deployment.
 
-3-Tier Web Application Docker Images
+# 3-Tier Web Application Docker Images
 
-Nginx Web Server
-Flask Application Server
-PostgreSQL Database.
+Nginx Web Server - evilvampire/bdiui:v1,
+Flask Application Server - evilvampire/bdiapi:v1,
+PostgreSQL Database - evilvampire/bdidb:v1,
 
-This package contains the Kubernetes deployment configuration for a 3-tier web application.
+# kubernetes folder contains the Kubernetes deployment configuration for a 3-tier web application.
 
 ## Prerequisites
 
-* Kubernetes cluster (e.g., Minikube, GKE)
+* Kubernetes cluster (e.g., Minikube, )
 * Docker images for Nginx, Flask, and Postgres
 
 ## Deployment
@@ -31,3 +31,4 @@ This package contains the Kubernetes deployment configuration for a 3-tier web a
 2. Check the pod status: `kubectl get pods`
 3. Check the service status: `kubectl get svc`
 4. Access the application: `curl http://hello-world.example.com`
+5. Access the application through clusterip or Nodeport also.
