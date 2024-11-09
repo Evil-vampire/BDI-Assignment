@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello, World!</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>This is the presentation tier.</p>
+    <p>API Response: <span id="api-response"></span></p>
+
+    <script>
+        fetch('/api/hello')
+            .then(response => response.text())
+            .then(data => document.getElementById('api-response').innerText = data);
+    </script>
+</body>
+</html>
