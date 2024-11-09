@@ -31,4 +31,4 @@ PostgreSQL Database - evilvampire/bdidb:v1,
 2. Check the pod status: `kubectl get pods`
 3. Check the service status: `kubectl get svc`
 4. Access the application: `curl http://hello-world.example.com`
-5. Access the application through clusterip or Nodeport also.
+5. Access the application through `clusterip or Nodeport also`.
